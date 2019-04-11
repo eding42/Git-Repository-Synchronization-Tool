@@ -1,5 +1,5 @@
 #!/bin/bash
-declare -a my_array
+declare -a uncommitted_repos
 for f in *; do
     if [ -d "$f" ] ; then
         cd "$f"
@@ -10,7 +10,7 @@ for f in *; do
             git diff-index --quiet HEAD --
             if [ "$?" -ne 0 ] ; then
                 echo "THE REPO NEEDS TO BE COMMITTED"
-                my_array=( "${my_array[@]}" "${PWD##*/}" )
+                uncommitted_repos=( "${uncommitted_repos[@]}" "${PWD##*/}" )
             fi
             git status
             git push
@@ -19,13 +19,13 @@ for f in *; do
         cd ..
     fi
 done
-RED=`tput setaf 1`
+red=`tput setaf 1`
 reset=`tput sgr0`
 green=`tput setaf 2`
-if [ ${#my_array[@]} -ne 0 ]; then
-    var=$(IFS=' '; echo "${my_array[*]}")
-    var="${RED}$var${reset}"
-    if [ ${#my_array[@]} -eq 1 ]; then
+if [ ${#uncommitted_repos[@]} -ne 0 ]; then
+    var=$(IFS=' '; echo "${uncommitted_repos[*]}")
+    var="${red}$var${reset}"
+    if [ ${#uncommitted_repos[@]} -eq 1 ]; then
         var="The repository $var"
         var="$var has uncomitted changes."
     else
