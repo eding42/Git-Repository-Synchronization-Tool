@@ -17,6 +17,10 @@ Clone the repo into your main repository directory.
 `git clone https://github.com/eding42/Git-Repository-Synchronization-Tool`
 `cd Git-Repository-Synchronization-Tool`
 
+
+#PLEASE IGNORE EVERYTHING BELOW THIS
+###I promise I'll write a new readme after I finish the script. 
+
 Run the simple "installer," which just copies the script up one level to your main repository directory. The installer will also make the main script and executable. 
 
 `bash install.sh`
