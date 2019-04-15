@@ -29,4 +29,4 @@ Run the script from your main directory of repositories. The script will automat
 
 `./git-sync-tool.sh`
 
-If any bugs are encountered, please post them to GitHub. 
+If any bugs are encountered, please post them to GitHub. Please.
