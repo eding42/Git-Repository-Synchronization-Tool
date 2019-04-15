@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm ./bin/repo-list.txt
+
 echo "Hello World!"
 
 cd ..
@@ -18,6 +20,15 @@ done
 echo "reached this point"
 
 while read name; do
-    name="git clone $name"
-    $name
+yes=$name
+name="git clone $name"
+    if ! $name;
+    then
+        status="echo '${PWD##*/}'"
+        status="$status has already been cloned."
+    else
+        name="git clone $yes"
+        #$name
+        echo "$yes"
+    fi
 done < "./Git-Repository-Synchronization-Tool/bin/repo-list.txt"
