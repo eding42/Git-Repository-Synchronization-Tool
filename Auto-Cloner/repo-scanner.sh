@@ -3,6 +3,7 @@
 echo "Welcome to Repository Scanner! This handy script outputs a list of repo sources to the 'bin' sub-folder."
 
 cd ..
+cd ..
 
 for f in *; do
     if [ -d "$f" ] ; then
@@ -14,3 +15,5 @@ for f in *; do
         fi
     fi
 done
+
+echo -e "\nDone! Run the 'auto-repo-clone' script to sync your git repos!"
