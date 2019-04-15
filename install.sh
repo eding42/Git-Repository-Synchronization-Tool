@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Copies the script to user repository directory.
-cp git-sync-tool.sh ..
+cp git-update-tool.sh ..
 cd ..
-chmod +x git-sync-tool.sh
-echo "Installation finished! Switch to your main repository directory, and run the script with './git-sync-tool.sh'"
+chmod +x git-update-tool.sh
+echo "Installation finished! Switch to your parent directory, and run the script with './git-sync-tool.sh'"
