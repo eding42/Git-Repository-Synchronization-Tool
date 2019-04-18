@@ -8,6 +8,7 @@ If you run linux, this should work perfectly.
 
 You may need to enter your login credentials for each repo. If you would like to bypass that, please refer to this [page.](https://gist.github.com/technoweenie/1072829)
 
+NOTE - CURRENTLY BORKED
 
 
 ### Installation
