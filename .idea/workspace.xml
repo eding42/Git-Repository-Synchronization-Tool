@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e01be573-f648-46c4-a6e9-57c8570b3f23" name="Default Changelist" comment="U">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Git-Updater/install.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Git-Updater/install.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="e01be573-f648-46c4-a6e9-57c8570b3f23" name="Default Changelist" comment="U" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -198,6 +194,7 @@
       <workItem from="1555704926290" duration="86000" />
       <workItem from="1555785178447" duration="4771000" />
       <workItem from="1555822677356" duration="604000" />
+      <workItem from="1557456929015" duration="623000" />
     </task>
     <task id="LOCAL-00001" summary="Update readme, etc.">
       <created>1555300245142</created>
@@ -252,12 +249,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8979000" />
+    <option name="totallyTimeSpent" value="9602000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="17" width="1469" height="846" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14546733" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14757554" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
