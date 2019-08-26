@@ -6,7 +6,7 @@ No other dependencies needed!
 
 If you run linux, this should work perfectly. 
 
-You may need to enter your login credentials for each repo. If you would like to bypass that, please refer to this [page.](https://gist.github.com/technoweenie/1072829)
+You may need to re-enter your login credentials for each repo. Setting your login credentials [globally](https://stackoverflow.com/questions/35942754/how-to-save-username-and-password-in-git) is strongly recommended.
 
 
 
