@@ -5,16 +5,20 @@ for f in *; do
         cd "$f"
         echo -e "\n ------------------ NEW REPOSITORY ------------------\n"
         echo "Now checking $f"
-        if [ -d .git ] ; then 
+        if [ -d .git ] ; then
+			echo "Found git repository in $f"
+			echo "Updating repository...Pulling changes from remote..."
+			git pull
             git add .
             git diff-index --quiet HEAD --
             if [ "$?" -ne 0 ] ; then
                 echo "THE REPO NEEDS TO BE COMMITTED"
                 uncommitted_repos=( "${uncommitted_repos[@]}" "${PWD##*/}" )
             fi
+			branch=$(git rev-parse --abbrev-ref HEAD)
+			echo "CURRENTLY ON: ${branch}"
             git status
             git push
-            git pull
         fi
         cd ..
     fi
